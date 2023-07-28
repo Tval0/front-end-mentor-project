@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+/*css reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+}
+
+body {
+    display: grid;
+    place-items: center;
+    margin: 60px 0px;
+    text-align: center;
+    font-size: 15px;
+}
+
+header {
+    width: 400px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+
+.bg {
+    position: absolute;
+    display: none;
+}
+
+.bg-top {
+    left: 0;
+    top: 0;
+}
+
+.bg-bot {
+    bottom: 0;
+    right: 0;
+    height: 800px;
+}
+
+h1 {
+    font-size: 2rem;
+}
+
+h1, p {
+    color: hsl(300, 43%, 22%);
+}
+
+p {
+    line-height: 1.3;
+    margin: 30px 0;
+    font-size: 1.2rem;
+}
+
+main {
+    width: 400px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    margin: 40px 0;
+}
+
+.reviews {
+    width: 350px;
+    height: 80px;
+    background-color: hsla(300, 43%, 22%, .1);
+    border-radius: 10px;
+    margin: 10px auto;
+}
+
+.reviews h1 {
+    font-size: 1rem;
+}
+
+main h1, main img {
+    position: relative;
+    top: 15px;
+}
+
+main h1 {
+    top: 25px;
+}
+
+.stars {
+    display: flex;
+    width: 120px;
+    height: 15px;
+    margin: 0 auto;
+    justify-content: space-between;
+}
+
+footer {
+    width: 350px;
+    height: 100px;    
+}
+
+.comments {
+    height: 300px;
+    background-color: hsl(300, 43%, 22%);
+    margin: 20px 0;
+    border-radius: 10px;
+    color: #FFF;
+    position: relative;
+    padding: 25px;
+    text-align: justify;
+}
+
+.user img {
+    width: 40px;
+    border-radius: 50%;
+    position: absolute;
+    top: 30px;
+}
+
+.user h2 {
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.user span {
+    color: hsl(333, 80%, 67%);
+    font-size: 1.1rem;
+}
+
+.user h2, .user span {
+    position: relative;
+    left: 60px;
+    top: 10px;
+}
+
+.user-comment {
+    color: #FFF;
+}
+
+
+
+@media all and (min-width: 1270px) {
+    body {
+        margin: 120px 200px;
+        text-align: left;
+        display: block;
+    }
+
+    .bg {
+        display: inline;
+    }
+
+    header {
+        width: 450px;
+        display: inline-block;
+    }
+
+    h1 {
+        font-size: 3rem;
+    }
+
+    .reviews {
+        width: 450px;
+        height: 50px;
+        flex-direction: row;
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+    }
+
+    .comments {
+        display: inline-block;
+        width: 400px;
+        height: 250px;
+        margin-right: 30px;
+        position: relative;
+        top: 80px;
+    }
+
+    .c-top {
+        top: 60px;
+    }
+
+    .c-bot {
+        top: 100px;
+    }
+
+    .stars {
+        display: inline-block;
+    }
+
+    .reviews h1 {
+        display: inline-block;
+
+    }
+
+    main {
+        display: inline-block;
+        width: 400px;
+        height: 300px;
+        position: absolute;
+        display: flex;
+        top: 100px;
+        left: 800px;
+    }
+
+    .r-top, .r-bot {
+        position: relative;
+    }
+
+    .r-top {
+        left: -50px;
+    }
+
+    .r-bot {
+        left: 50px;
+    }
+
+    main h1 {
+        position: relative;
+        top: 10px;
+        left: 40px;
+    }
+
+    main img {
+        padding: 2px;
+        left: 20px;
+        width: 20px;
+    }
+
+    .user-comment {
+        font-size: 1rem;
+    }
+}
